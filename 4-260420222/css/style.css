@@ -10,14 +10,14 @@ form {
   margin-right: auto;
   background-color: black;
   border: 10px solid;
-  border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
-  animation: rotate 1.5s ease-in infinite;
+  border-image: linear-gradient(#7a06ff, #e71b99, #1c64ff) 1;
+  animation: rotate 3s ease-in infinite;
   margin-top: 200px;
   border-radius: inherit;
 }
 @keyframes rotate {
   50% {
-    border-image: linear-gradient(360deg, #ff512f, #dd2476) 1;
+    border-image: linear-gradient(360deg, #e71b99, #1c64ff, #7a06ff) 1;
   }
 }
 input {
@@ -25,4 +25,5 @@ input {
   width: 96%;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(146, 145, 145);
 }
