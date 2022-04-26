@@ -13,7 +13,9 @@
     * Forma de utilização no HTML
 
 ```JavaScript
-        <script>alert("Olá, Mundo!");</script>
+        <script>
+        alert("Olá, Mundo!");
+        </script>
 
 
 ```
