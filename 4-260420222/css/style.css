@@ -26,4 +26,26 @@ input {
   margin: 10px;
   padding: 10px;
   background-color: rgb(146, 145, 145);
+  border-color: white;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: white;
+}
+button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border: 3px solid #3c67e3;
+  border-radius: 10px;
+  background-color: black;
+}
+button:hover {
+  animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
 }
