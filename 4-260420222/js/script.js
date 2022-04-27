@@ -15,25 +15,19 @@ function verificarCPF() {
     peso10--;
   }
   console.log(resultado);
-
   resto = resultado % 11;
-
   if (resto < 2) {
     cpfCalc += 0;
   } else {
     cpfCalc += 11 - resto;
   }
-
   console.log(cpfCalc);
-
   // Vamos zerar a variavel resultado:
   resultado = 0;
-
   for (var i = 0; i < 10; i++) {
     resultado += cpfCalc[i] * peso11;
     peso11--;
   }
-
   resto = resultado % 11;
   if (resto < 2) {
     cpfCalc += 0;

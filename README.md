@@ -16,13 +16,13 @@
         - Criação de constantes
     * Forma de utilização no HTML
 
-```JavaScript
+````JavaScript
         <script>
         alert("Olá, Mundo!");
         </script>
 
 
-```
+```git
 
 Outro exemplo de aplicação do JavaScript
 
@@ -35,7 +35,7 @@ Outro exemplo de aplicação do JavaScript
         <script>
     <body>
 <html>
-```
+````
 
 #### Calculo do CPF em JavaScript
 
