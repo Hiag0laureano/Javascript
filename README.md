@@ -36,3 +36,7 @@ Outro exemplo de aplicação do JavaScript
     <body>
 <html>
 ```
+
+#### Calculo do CPF em JavaScript
+
+!["Codigo do cálculo do CPF"](img/cpf.png)
