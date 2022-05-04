@@ -60,7 +60,7 @@ app.post("/cadastro", (req, res) => {
 app.put("/atualizar/:id", (req, res) => {
   Client.findByIdAndUpdate(
     req.params.id,
-    res.body,
+    req.body,
     { new: true },
     (erro, dados) => {
       if (erro)
@@ -72,7 +72,11 @@ app.put("/atualizar/:id", (req, res) => {
 
 // Para deletar um dado iremos usar o verbo DELETE passando o id cadastrado
 app.delete("/apagar/:id", (req, res) => {
-  res.status(204).send({ output: `Apagou` });
+  Client.findByIdAndDelete(req.params.id, (erro, dados) => {
+    if (erro)
+      return res.status(500).send({ output: `Erro ao Apagar: -> ${erro}` });
+    res.status(204).send({ output: "Apagou" });
+  });
 });
 
 // Definir uma porta de comunicação com o servidor de aplicação
